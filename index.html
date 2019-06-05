@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carolina Fresh Market & More</title>
+  </head>
+  <body>
+    <div class="menu__wrap">
+      <input type="checkbox" class="toggler" id="navi-toggle" />
+      <div class="menu__icon"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#home" onclick="closeNav()">Home</a></li>
+              <li><a href="#about" onclick="closeNav()">About</a></li>
+              <li><a href="#market" onclick="closeNav()">Market</a></li>
+              <li><a href="#" onclick="closeNav()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="showcase" id="home">
+      <div class="container showcase__inner">
+        <div class="showcase__title">
+          <h1>Carolina Fresh Market & More</h1>
+          <h2>Eat Fresh | Eat Local</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- About section -->
+
+    <div class="about__wrap" id="about">
+      <div class="about">
+        <div class="about__bio">
+          <h1 class="header-text">About Carolina Fresh Market & More</h1>
+          <br />
+          <br />
+          <p class="about__text">
+            Hi, my name is Tiffany Albertson and I would like to tell you a
+            little about myself. I am married to Al Albertson and we have two
+            wonderful children. Al was born and raised in the Pelzer/Williamston
+            SC area and is the owner of Alberson's Garage & towing and K&B
+            towing. I was raised by my grandparents and my daddy in Anderson SC.
+            My grandparents were farmers and owned a welding shop. They showed
+            me the value of agriculture and hard work. In high-school, I became
+            the first female FFA president of the Anderson Extension Campus
+            chapter. I received the highest award from the National FFA
+            organization.
+            <br /><br />
+            Carolina Fresh Market & More opened on April 8th, 2017. We opened
+            the store to serve our community by offering the best homegrown
+            products we can find. We buy from local farmers and grow our own
+            produce as well. We offer organic meats and dairy products. Our
+            children love to help with the animals and gardening. We are raising
+            them to know you can do anything, if you put your mind to it.
+            <br /><br />
+            The main-focus of the store is to offer healthier eating options and
+            provide products that are all natural. We also carry products from
+            local craft makers. We have beef hotdogs and snow cones. We are
+            planning to open a farm to table restaurant in the future.
+            <br />
+            <br />
+            I hope you take time to come by and see us. We are open year around.
+            <br />
+            <br />
+            Tiffany Alberson
+          </p>
+        </div>
+        <div class="about_pic">
+          <img src="img/store-front.jpg" alt="" class="store__pic" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Market Section -->
+    <div class="market__wrap" id="market">
+      <h1 class="market__heading">The Market</h1>
+      <div class="cards">
+        <div class="card">
+          <div class="card__icon">
+            <img src="img/vectors/produce.png" alt="" class="icon__image" />
+          </div>
+          <h2 class="card__heading">Produce</h2>
+          <p class="card__detail">
+            Garden fresh fruits and vegetables. Organic and locally sourced
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <img src="img/vectors/dairy.png" alt="" class="icon__image" />
+          </div>
+          <h2 class="card__heading">Meat & Dairy</h2>
+          <p class="card__detail">
+            Farm fresh milk, eggs, cheese and meats
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <img src="img/vectors/nature.png" alt="" class="icon__image" />
+          </div>
+          <h2 class="card__heading">Garden</h2>
+          <p class="card__detail">
+            Plants, Flowers and herbs
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <img src="img/vectors/crafts.png" alt="" class="icon__image" />
+          </div>
+          <h2 class="card__heading">Arts & Crafts</h2>
+          <p class="card__detail">
+            Arts and crafts from local vendors
+          </p>
+        </div>
+      </div>
+      <h1 class="market__heading">& More</h1>
+      <div class="more__section">
+        <ul class="list">
+          <li class="list__item">Jams & Jellys</li>
+          <li class="list__item">Salsas</li>
+          <li class="list__item">Fudge</li>
+          <li class="list__item">Honey</li>
+          <li class="list__item">Bread</li>
+          <li class="list__item">Soaps & Essential Oils</li>
+          <li class="list__item">Nutbutters</li>
+          <li class="list__item">Lotions</li>
+          <li class="list__item">Yogurt</li>
+          <li class="list__item">Snacks</li>
+          <li class="list__item">Beans & Rice</li>
+          <li class="list__item">Snow Cones</li>
+          <li class="list__item">Beef Hotdogs</li>
+          <li class="list__item">and more...</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact__wrap"></div>
+
+    <script>
+      function closeNav() {
+        document.getElementById('navi-toggle').checked = false;
+      }
+    </script>
+  </body>
+</html>

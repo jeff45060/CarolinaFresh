@@ -1,0 +1,56 @@
+:root {
+  --color-primary-1: rgba(85, 197, 122, 0.3);
+  --color-primary-2: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: rgb(40, 180, 133, 0.5);
+
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.9);
+  --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+  --menu-speed: 0.75s;
+
+  $bp-largest: 75em; // 1200px
+  $bp-large: 68.75em; // 1100px
+  $bp-medium: 56.25em; // 900px
+  $bp-small: 37.5em; // 600px
+  $bp-smallest: 31.25em; // 500px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  // This defines what 1rem is
+  background-color: #eee;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+}
