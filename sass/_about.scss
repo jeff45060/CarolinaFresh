@@ -1,47 +1,6 @@
-.about__wrap {
-  padding: 4rem 6rem;
-  overflow: hidden;
-  background-image: linear-gradient(
-    to right bottom,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-white);
-  color: var(--color-grey-dark);
-  padding: 1.5rem;
-  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.2);
-}
-
 .about__bio {
-  flex: 0 0 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--color-tertiary-light);
 }
-
-h1 {
-  font-size: 3.6rem;
-  padding: 1rem 2rem 0;
-}
-
-p {
-  font-size: 1.5rem;
-  padding: 0 2rem 2rem;
-}
-
-.about_pic {
-  flex: 1;
-  padding: 1rem;
-}
-
-img {
-  width: 100%;
-  // height: auto;
-  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.3);
+.about__pic {
+  background-color: var(--color-secondary-light);
 }

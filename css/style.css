@@ -36,6 +36,11 @@ body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4; }
 
+.grid-container {
+  display: grid;
+  grid-template-rows: 100vh 40vw repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
 .container {
   margin: auto;
   overflow: hidden;
@@ -218,99 +223,21 @@ body {
   text-decoration: none;
   transition: color 0.4s ease; }
 
-.about__wrap {
-  padding: 4rem 6rem;
-  overflow: hidden;
-  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)); }
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-white);
-  color: var(--color-grey-dark);
-  padding: 1.5rem;
-  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.2); }
-
 .about__bio {
-  flex: 0 0 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column; }
+  background-color: var(--color-tertiary-light); }
 
-h1 {
-  font-size: 3.6rem;
-  padding: 1rem 2rem 0; }
+.about__pic {
+  background-color: var(--color-secondary-light); }
 
-p {
-  font-size: 1.5rem;
-  padding: 0 2rem 2rem; }
+.market {
+  background-color: var(--color-primary-2); }
 
-.about_pic {
-  flex: 1;
-  padding: 1rem; }
+.more {
+  background-color: var(--color-secondary-dark); }
 
-img {
-  width: 100%;
-  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.3); }
+.contact {
+  background-color: var(--color-tertiary-light); }
 
-.market__wrap {
-  padding: 3rem 10rem;
-  overflow: hidden; }
-
-.market__heading {
-  color: var(--color-primary-2);
-  font-size: 6rem;
-  text-align: center;
-  margin-bottom: 1rem; }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  padding: 2rem; }
-
-.card {
-  flex: 0 0 1fr;
-  width: 22rem;
-  height: 28rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: var(--shadow-light);
-  margin: 0 auto;
-  padding: 0 1rem; }
-
-.icon__image {
-  width: 10rem;
-  box-shadow: none;
-  margin-bottom: 1rem; }
-
-.card__heading {
-  color: var(--color-grey-dark);
-  font-size: 2rem; }
-
-.card__detail {
-  text-align: center;
-  color: var(--color-grey-dark); }
-
-.more__section {
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
-  background-color: #fff;
-  text-align: center;
-  margin: 2rem 10rem 0;
-  box-shadow: var(--shadow-light); }
-
-.list {
-  color: var(--color-grey-dark);
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap; }
-  .list__item {
-    flex: 0 0 50%; }
+.footer {
+  background-color: var(--color-grey-dark-3);
+  color: azure; }
