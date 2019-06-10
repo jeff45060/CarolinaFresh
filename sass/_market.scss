@@ -1,7 +1,9 @@
 .market {
   background-color: var(--color-primary-2);
+  grid-column: center-start / center-end;
 }
 
 .more {
   background-color: var(--color-secondary-dark);
+  grid-column: full-start / full-end;
 }

@@ -1,73 +1,20 @@
-.container {
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-}
-
 .showcase {
-  background-color: var(--color-primary-1);
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  grid-column: full-start / full-end;
+
+  background: linear-gradient(rgba(#333, 0.5), rgba(#333, 0.5)),
+    url('../img/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.showcase:before {
-  content: '';
-  background: url('../img/hero.jpg') no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.showcase .showcase__inner {
+.header__box {
+  color: var(--color-primary-2);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  height: 100%;
-}
-
-.showcase__title {
-  background-color: var(--color-white);
-  color: var(--color-primary-2);
-  padding: 2rem 3rem;
-  border-radius: 0.5rem;
-}
-
-.showcase h1 {
-  font-size: 6rem;
-  margin-bottom: 1rem;
-}
-
-.showcase h2 {
-  font-size: 4rem;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  color: var(--color-white);
-  background: var(--color-primary-2);
-  padding: 0.75rem 1.5rem;
-  margin-top: 10rem;
-  text-decoration: none;
-  border-radius: 5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: var(--shadow-dark);
-  transition: all 0.2s ease;
-
-  &:hover {
-    padding: 0.75rem 1.75rem;
-    font-size: 1.1rem;
-  }
-}
-
-::selection {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  padding: 1rem 3rem;
+  border-radius: 25px;
 }

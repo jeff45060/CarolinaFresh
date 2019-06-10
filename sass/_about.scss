@@ -1,6 +1,4 @@
-.about__bio {
+.about {
   background-color: var(--color-tertiary-light);
-}
-.about__pic {
-  background-color: var(--color-secondary-light);
+  grid-column: center-start / center-end;
 }

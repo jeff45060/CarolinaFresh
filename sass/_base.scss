@@ -49,7 +49,6 @@ html {
 }
 
 body {
-  // This defines what 1rem is
   background-color: #eee;
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
@@ -57,11 +56,11 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 100vh 40vw repeat(4, min-content);
+  grid-template-rows: 80vh repeat(5, min-content);
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    [full-start] 1fr [center-start] repeat(
       8,
-      [col-start] minmax(min-content, 15rem) [col-end]
+      [col-start] minmax(min-content, 12rem) [col-end]
     )
-    [center-end] minmax(6rem, 1fr) [full-end];
+    [center-end] 1fr [full-end];
 }
