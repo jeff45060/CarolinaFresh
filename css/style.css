@@ -38,8 +38,8 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 80vh repeat(5, min-content);
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-rows: 80vh repeat(6, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .showcase {
   grid-column: full-start / full-end;
@@ -55,8 +55,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 3rem;
-  border-radius: 25px; }
+  padding: 3rem 4rem;
+  border-radius: 10px; }
 
 .menu__wrap {
   position: fixed;
@@ -178,8 +178,34 @@ body {
   transition: color 0.4s ease; }
 
 .about {
-  background-color: var(--color-tertiary-light);
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  padding: 4rem;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)); }
+
+.about__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  color: var(--color-grey-dark);
+  padding: 1.5rem;
+  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.2); }
+
+.about__bio {
+  flex: 0 0 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem; }
+
+.about__pic {
+  flex: 1;
+  padding: 2rem; }
+
+.store__pic {
+  width: 100%;
+  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.3); }
 
 .market {
   background-color: var(--color-primary-2);
@@ -190,19 +216,22 @@ body {
   grid-column: full-start / full-end; }
 
 .heading__1 {
-  font-size: 6rem; }
+  font-size: 6rem;
+  padding-bottom: 2rem; }
 
 .heading__2 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  padding-bottom: 2rem; }
 
 .heading__3 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  padding-bottom: 1.5rem; }
 
 .heading__4 {
   font-size: 2rem; }
 
 .paragraph {
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .contact {
   background-color: var(--color-tertiary-light);

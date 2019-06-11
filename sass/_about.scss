@@ -1,4 +1,38 @@
 .about {
-  background-color: var(--color-tertiary-light);
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+  padding: 4rem;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+}
+
+.about__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  color: var(--color-grey-dark);
+  padding: 1.5rem;
+  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.2);
+}
+
+.about__bio {
+  flex: 0 0 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.about__pic {
+  flex: 1;
+  padding: 2rem;
+}
+
+.store__pic {
+  width: 100%;
+  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.3);
 }
