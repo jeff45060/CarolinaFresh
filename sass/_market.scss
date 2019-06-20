@@ -1,9 +1,96 @@
 .market {
-  background-color: var(--color-primary-2);
+  background-color: var(--color-grey-light-1);
   grid-column: center-start / center-end;
 }
 
+.market .market__heading {
+  color: var(--color-primary-2);
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding: 2rem;
+
+  @media only screen and (max-width: 900px) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  }
+  @media only screen and (max-width: 400px) {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #fff;
+  color: var(--color-grey-dark);
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  box-shadow: var(--shadow-light);
+}
+
+.card__icon {
+  flex: 1;
+  text-align: center;
+}
+
+.icon__image {
+  max-width: 50%;
+  height: 100%;
+  object-fit: cover;
+
+  @media only screen and (max-width: 900px) {
+    max-width: 35%;
+  }
+}
+
+.card__heading {
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.card__detail {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
 .more {
-  background-color: var(--color-secondary-dark);
-  grid-column: full-start / full-end;
+  // background-color: var(--color-secondary-dark);
+  grid-column: center-start / center-end;
+  margin: 0 2rem 4rem;
+  box-shadow: var(--shadow-light);
+}
+
+.more__section {
+  background-color: #fff;
+
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  color: var(--color-grey-dark);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  padding: 1rem 2rem;
 }

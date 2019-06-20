@@ -1,4 +1,52 @@
 .contact {
-  background-color: var(--color-tertiary-light);
-  grid-column: center-start / center-end;
+  background-color: var(--color-grey-dark-2);
+  grid-column: full-start / full-end;
+  // grid-column: 1 / -1;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+}
+.contact__info {
+  padding: 3rem;
+}
+
+.phone {
+  padding-bottom: 2rem;
+}
+
+.address {
+  padding-bottom: 2rem;
+}
+
+.email {
+  padding-bottom: 2rem;
+}
+
+.social {
+  padding-right: 3rem;
+}
+
+.map {
+  margin: 0;
+  // padding: 8rem 0;
+}
+
+.map #map {
+  width: 50vw;
+  height: 100%;
+  object-fit: cover;
+
+  @media only screen and (max-width: 400px) {
+    width: 100vw;
+  }
+}
+
+i {
+  color: #fff;
 }

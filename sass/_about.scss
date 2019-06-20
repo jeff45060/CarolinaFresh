@@ -7,6 +7,10 @@
     var(--color-primary-light),
     var(--color-primary-dark)
   );
+
+  @media only screen and (max-width: 400px) {
+    padding: 0;
+  }
 }
 
 .about__wrap {
@@ -17,6 +21,10 @@
   color: var(--color-grey-dark);
   padding: 1.5rem;
   box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .about__bio {
@@ -24,6 +32,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 1rem 3rem;
 }
 
@@ -33,6 +42,7 @@
 }
 
 .store__pic {
+  display: block;
   width: 100%;
   box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.3);
 }
